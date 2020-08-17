@@ -4,8 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  
 </head>
 <body>
-  
+  <div class="user">
+    <div class="user_top">用户管理</div>
+    <div class="user_content">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item active" role="presentation">
+          <a class="nav-link" id="home-tab" data-toggle="tab" href="#admin"  aria-selected="true">管理员</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#editor"  aria-selected="false">编辑</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vip" aria-selected="false">会员</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade in active" id="admin">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">编号</th>
+                <th scope="col">用户名</th>
+                <th scope="col">真实姓名</th>
+                <th scope="col">email</th>
+                <th scope="col">状态</th>
+                <th scope="col">注册时间</th>
+                <th scope="col">操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-pane fade" id="editor" >编辑</div>
+        <div class="tab-pane fade" id="vip" >vip</div>
+      </div>
+    </div>
+</div>
+
+<style>
+  .user_top{
+    /* background-color: pink; */
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+</style>
 </body>
 </html>
