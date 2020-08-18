@@ -23,6 +23,7 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade in active" id="admin">
+          <button type="button" class="btn btn-info">新增</button>
           <table class="table table-hover">
             <thead>
               <tr>
@@ -53,5 +54,21 @@
     margin-bottom: 10px;
   }
 </style>
+<script>
+  $(function() {
+    function loadUser() {
+      $.ajax({
+        url:baseUrl + '/manager/user/findAllUser',
+        method: 'get',
+        success:function(res){
+          console.log(res);
+        }
+
+      })
+    }//加载用户
+
+    loadUser();
+  })
+</script>
 </body>
 </html>
