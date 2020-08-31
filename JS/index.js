@@ -17,13 +17,13 @@ $(function () {
     $('.header-title').text(text);
     // 通过标题内容 加载相应的界面
     if (text == '首页') {
-      $('.content-main').load('../pages/home.html');
+      $('.content-main').load(baseUrl+'/pages/home.html');
     } else if (text == '栏目管理') {
-      $('.content-main').load('../pages/category.html');
+      $('.content-main').load(baseUrl+'/pages/category.html');
     } else if (text == '文章管理') {
-      $('.content-main').load('../pages/article.html');
+      $('.content-main').load(baseUrl+'/pages/article.html');
     } else if (text == '用户管理') {
-      $('.content-main').load('../pages/user.html');
+      $('.content-main').load(baseUrl+'/pages/user.html');
     }else{
       return;
     }
